@@ -109,6 +109,15 @@ namespace WackyBagTr.Utilties
 			return res;
 		}
 
+		/// <summary>
+		/// <para>draw in map as if in world.</para>
+		/// <para>can be used in <see cref="ModNPC.BossHeadRotation(ref float)"/></para>
+		/// <para>DON'T use in <see cref="ModNPC.BossHeadSlot(ref int)"/> or get cooked by BossCheckList</para>
+		/// <para>Also don't set -1 in <see cref="ModNPC.BossHeadSlot(ref int)"/> or draw won't happen</para>
+		/// <para>Draw in Minimap is cutted</para>
+		/// </summary>
+		/// <param name="WldPos">Draw position in world</param>
+		/// <param name="extras">more things to do, e.g. add shader</param>
 		public static void DrawInMap(Texture2D texture, Vector2 WldPos, Rectangle? sourceRectangle, Color color, float rotation, Vector2 origin, Vector2 scale, SpriteEffects effects, float worthless = 0f,Action? extras=null)
 		{
 			var spriteBatch = Main.spriteBatch;

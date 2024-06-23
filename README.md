@@ -12,6 +12,7 @@ Behaviors, combinable things to manage NPCs' and Projectiles' behaviors
 BossSystem, register boss downed state, and add infomations to BossCheckList, at WackyBagTr.Common.Systems.BossSystem
 
 DelegateDust, useful to test things, at WackyBagTr.Dusts.DelegateDust
+	and utils at WackyBagTr.Utilties.Wacky
 
 Utils,
 	DrawInMap, at WackyBagTr.Utilties.Wacky.DrawInMap
@@ -19,5 +20,5 @@ Utils,
 	and more...
 
 note:
-lazy,
+im lazy
 not fully tested
