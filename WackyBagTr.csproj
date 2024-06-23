@@ -12,6 +12,9 @@
 	  <Exec Command="copy &quot;D:\Users\XNT\Documents\_\source\repos\WackyBag\bin\Debug\net8.0\WackyBag.dll&quot; &quot;D:\Users\XNT\Documents\My Games\Terraria\tModLoader\ModSources\WackyBagTr\lib&quot;" />
 	</Target>
 	<ItemGroup>
+	  <ProjectReference Include="..\..\..\..\..\_\source\repos\WackyBag\WackyBag.csproj" />
+	</ItemGroup>
+	<ItemGroup>
 	  <AdditionalFiles Update="Assets\Effects\DrawInRect.fx">
 	    <Generator></Generator>
 	  </AdditionalFiles>
