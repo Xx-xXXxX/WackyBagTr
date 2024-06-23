@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<!-- Import tModLoader mod properties -->
+	<Import Project="..\tModLoader.targets" />
+
+	<!-- General -->
+	<PropertyGroup>
+	  <Nullable>enable</Nullable>
+	  <PlatformTarget>x64</PlatformTarget>
+	</PropertyGroup>
+	<Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+	  <Exec Command="copy &quot;D:\Users\XNT\Documents\_\source\repos\WackyBag\bin\Debug\net8.0\WackyBag.dll&quot; &quot;D:\Users\XNT\Documents\My Games\Terraria\tModLoader\ModSources\WackyBagTr\lib&quot;" />
+	</Target>
+	<ItemGroup>
+	  <AdditionalFiles Update="Assets\Effects\DrawInRect.fx">
+	    <Generator></Generator>
+	  </AdditionalFiles>
+	</ItemGroup>
+
+
+	<!-- References -->
+
+</Project>
