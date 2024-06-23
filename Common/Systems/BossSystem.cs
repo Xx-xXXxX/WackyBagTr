@@ -49,9 +49,7 @@ namespace WackyBagTr.Common.Systems
 
 	public abstract class BossSystem:ModSystem
 	{
-		private static class WackyUtils {
-			
-		}
+		
 #pragma warning disable CS8618 // 在退出构造函数时，不可为 null 的字段必须包含非 null 值。请考虑声明为可以为 null。
 		private Dictionary<string, int> bossToId;
 		public IDictionary<string, int> BossToId=> bossToId;
@@ -114,6 +112,10 @@ namespace WackyBagTr.Common.Systems
 
 		public static string GetDoneBossText(string BossName) { 
 			return $"BossDowned{BossName}";
+		}
+
+		public void SetBossDone(string BossName) {
+			BossDowned[bossToId[BossName]] = true;
 		}
 
 		public override void SaveWorldData(TagCompound tag)
